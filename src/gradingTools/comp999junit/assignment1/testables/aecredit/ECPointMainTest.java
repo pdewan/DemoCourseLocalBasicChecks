@@ -2,7 +2,6 @@ package gradingTools.comp999junit.assignment1.testables.aecredit;
 
 import grader.basics.execution.BasicProjectExecution;
 import grader.basics.junit.NotesAndScore;
-import gradingTools.comp999junit.assignment1.testables.wrongangle.Main;
 
 import org.junit.Assert;
 import org.junit.Test;
