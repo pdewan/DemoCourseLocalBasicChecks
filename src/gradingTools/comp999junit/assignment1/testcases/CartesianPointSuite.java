@@ -40,6 +40,7 @@ public class CartesianPointSuite {
 		BasicJUnitUtils.interactiveTest("wrongangle", CartesianPointSuite.class);
 //		BasicJUnitUtils.interactiveTest("aecredit", CartesianPointSuite.class);
 
+//		BasicJUnitUtils.interactiveTest("nonexisting", CartesianPointSuite.class);
 
 
 
