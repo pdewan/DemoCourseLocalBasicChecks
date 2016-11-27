@@ -12,13 +12,18 @@ import util.annotations.MaxValue;
 public class ADirectPointMainTest extends MultiAbstractPointMainTest {
 
 	@Override
-	protected String runMain(String[] anArgs, String... anInput) {
+	protected String runMain(String[] anArgs, String... anInput) throws Throwable {
 		return BasicProjectExecution.invokeMain(Main.class, anArgs, anInput).out;
 				
 	}
 	@Test
 	public void test() {
-		testMain(10, 10, 14.142, Math.PI); // 45 degree angle
+		try {
+			testMain(10, 10, 14.142, Math.PI);
+		} catch (Throwable e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} // 45 degree angle
 	}
 	
 

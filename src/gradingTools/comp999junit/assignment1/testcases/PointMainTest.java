@@ -12,16 +12,21 @@ import util.annotations.MaxValue;
 @MaxValue(5)
 public  class PointMainTest extends AbstractPointTest {
 	
-	protected  String runMain (String[] anArgs, String... anInput) {
+	protected  String runMain (String[] anArgs, String... anInput) throws Throwable {
 		return BasicProjectExecution.callCorrespondingMain(Main.class, anArgs, anInput).out;
 
 	}
 	@Test
 	public void test() {
-		testMain(10, 10, 14.142, Math.PI/4); // 45 degree angle
+		try {
+			testMain(10, 10, 14.142, Math.PI/4);
+		} catch (Throwable e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} // 45 degree angle
 	}
 	protected  void testMain(int theX, int theY, double aCorrectRadius,
-			double aCorrectAngle) {
+			double aCorrectAngle) throws Throwable {
 		double fractionComplete = 0.0;
 //		String anInput = theX + "\n" + theY;
 //		String anOutput = runMain(new String[]{}, anInput);

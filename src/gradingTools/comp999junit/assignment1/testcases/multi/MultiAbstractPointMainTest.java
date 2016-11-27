@@ -6,9 +6,9 @@ import org.junit.Assert;
 
 public abstract class MultiAbstractPointMainTest extends MultiAbstractPointTest {
 	
-	protected abstract  String runMain (String[] anArgs, String... anInput) ;
+	protected abstract  String runMain (String[] anArgs, String... anInput) throws Throwable ;
 	protected  void testMain(int theX, int theY, double aCorrectRadius,
-			double aCorrectAngle) {
+			double aCorrectAngle) throws Throwable {
 		double fractionComplete = 0.0;
 //		String anInput = theX + "\n" + theY;
 //		String anOutput = runMain(new String[]{}, anInput);
