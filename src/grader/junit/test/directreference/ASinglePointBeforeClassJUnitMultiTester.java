@@ -1,19 +1,19 @@
 package grader.junit.test.directreference;
 
 
-import gradingTools.comp999junit.assignment1.testables.allcorrect.ACCartesianPoint;
-import gradingTools.comp999junit.assignment1.testables.allcorrect.ACPoint;
-
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import testables.java.correct.ACorrectTestableCartesianPoint;
+import testables.java.correct.TestablePoint;
+
 public class ASinglePointBeforeClassJUnitMultiTester {	
-	static ACPoint point;
+	static TestablePoint point;
 	@BeforeClass
 	public static void createPoint() {
 		System.out.println("Testing 10, 10");
-		point = new ACCartesianPoint(10, 10);
+		point = new ACorrectTestableCartesianPoint(10, 10);
 	}
 	
 	@Test

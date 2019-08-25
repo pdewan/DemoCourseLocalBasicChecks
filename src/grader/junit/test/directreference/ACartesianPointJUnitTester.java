@@ -1,13 +1,11 @@
 package grader.junit.test.directreference;
 
 
-//import org.junit.Test;
-import gradingTools.comp999junit.assignment1.testables.allcorrect.ACCartesianPoint;
-import gradingTools.comp999junit.assignment1.testables.allcorrect.ACPoint;
-
 import org.junit.Assert;
 import org.junit.Test;
 
+import testables.java.correct.ACorrectTestableCartesianPoint;
+import testables.java.correct.TestablePoint;
 import util.annotations.Explanation;
 import util.annotations.IsExtra;
 import util.annotations.IsRestriction;
@@ -29,7 +27,7 @@ public class ACartesianPointJUnitTester {
 	}	
 	public void test(int theX, int theY, double theCorrectRadius,
 			double theCorrectAngle) {
-		ACPoint point = new ACCartesianPoint(theX, theY);
+		TestablePoint point = new ACorrectTestableCartesianPoint(theX, theY);
 		double computedRadius = point.getRadius();
 		double computedAngle = point.getAngle();	
 		Assert.assertTrue(

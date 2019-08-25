@@ -1,8 +1,5 @@
 package grader.junit.test.directreference;
 
-import gradingTools.comp999junit.assignment1.testables.allcorrect.ACCartesianPoint;
-import gradingTools.comp999junit.assignment1.testables.allcorrect.ACPoint;
-
 import java.util.Arrays;
 import java.util.Collection;
 
@@ -11,13 +8,16 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
+
+import testables.java.correct.ACorrectTestableCartesianPoint;
+import testables.java.correct.TestablePoint;
 @RunWith(value = Parameterized.class)
 public class ACartesianPointParametrizedJUnitMultiTester {
 	int x;
 	int y;
 	double correctRadius;
 	double correctAngle;
-	ACPoint point; 
+	TestablePoint point; 
 		
 //	@BeforeClass
 //	public static void constructPoint() {
@@ -29,7 +29,7 @@ public class ACartesianPointParametrizedJUnitMultiTester {
 		y = theY;
 		correctRadius = theCorrectRadius;
 		correctAngle = theCorrectAngle;		
-		point =  new ACCartesianPoint(x, y);
+		point =  new ACorrectTestableCartesianPoint(x, y);
 	}
 	
 	@Parameters
