@@ -9,7 +9,7 @@ public interface Point {
 	public double getRadius();
 //	void print(String aString, ECPoint aPoint); 
 	void print(); 
-	Point translate(Point aPoint, int anXDelta, int aYDelta); 
+	Point translate(int anXDelta, int aYDelta); 
 
 
 }

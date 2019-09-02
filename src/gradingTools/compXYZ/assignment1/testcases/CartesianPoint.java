@@ -34,8 +34,8 @@ public class CartesianPoint implements Point {
 	public void print () {
 		System.out.println ("(" + x + "," + y + ")");
 	}
-	public Point translate (Point aPoint, int anXDelta, int aYDelta) {
-		return new CartesianPoint (aPoint.getX() + anXDelta, aPoint.getY() + aYDelta);
+	public Point translate (int anXDelta, int aYDelta) {
+		return new CartesianPoint (getX() + anXDelta, getY() + aYDelta);
 	}
 	public static void main(String args[]) {
 		Point point =  new CartesianPoint (50, 100);

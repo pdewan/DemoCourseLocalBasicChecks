@@ -20,7 +20,7 @@ public class ECPointTranslationTest extends ECAbstractPointTest{
 		try {
 			
 			createPoint(5, 10);
-			TestablePoint retVal = point.translate(point, 5, 10);
+			TestablePoint retVal = point.translate(5, 10);
 			int actualX = retVal.getX();
 			int actualY = retVal.getY();
 			Assert.assertTrue(

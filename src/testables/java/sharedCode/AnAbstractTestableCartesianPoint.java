@@ -28,7 +28,7 @@ public abstract class AnAbstractTestableCartesianPoint {
 		return Math.sqrt(x*x + y*y); 
 	}
 	public void print () {
-		System.out.println ("X: " + x + " Y:" + y);
+		System.out.println ("X: " + x + " Y:" + y + "  Radius:" + getRadius() + " Angle:" + getAngle());
 	}
 	public static int inputX() {
 		System.out.println("Please enter the X coordinate:");

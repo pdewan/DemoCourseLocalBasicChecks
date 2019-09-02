@@ -9,5 +9,5 @@ public interface TestablePoint {
 	public double getRadius();
 //	void print(String aString, ACPoint aPoint);
 	void print();
-	TestablePoint translate(TestablePoint aPoint, int anXDelta, int aYDelta); 
+	TestablePoint translate(int anXDelta, int aYDelta); 
 }

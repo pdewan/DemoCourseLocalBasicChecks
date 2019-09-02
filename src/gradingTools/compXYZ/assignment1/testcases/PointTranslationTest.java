@@ -21,7 +21,7 @@ public class PointTranslationTest extends AbstractPointTest{
 		try {
 			
 			createPoint(5, 10);
-			Point retVal = point.translate(point, 5, 10);
+			Point retVal = point.translate(5, 10);
 			int actualX = retVal.getX();
 			int actualY = retVal.getY();
 			Assert.assertTrue(
