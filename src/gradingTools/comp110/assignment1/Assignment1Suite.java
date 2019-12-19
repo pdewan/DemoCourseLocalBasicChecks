@@ -6,14 +6,23 @@ import org.junit.runners.Suite;
 import grader.basics.config.BasicStaticConfigurationUtils;
 import grader.basics.junit.BasicJUnitUtils;
 import grader.basics.project.BasicProjectIntrospection;
+import gradingTools.comp110.assignment1.addmultiply.testcases.CustomCommandIncrementalPromptTestCase;
+import gradingTools.comp110.assignment1.addmultiply.testcases.CustomCommandPromptTestCase;
+import gradingTools.comp110.assignment1.addmultiply.testcases.IncrementalInputPromptTestCase;
+import gradingTools.comp110.assignment1.addmultiply.testcases.PledgeTestCase;
 import gradingTools.comp110.assignment1.addmultiply.testcases.PrintAddAndMultiplyTestCase;
 import gradingTools.comp110.assignment1.addmultiply.testcases.PromptTestCase;
 
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
-	PromptTestCase.class,	
-	PrintAddAndMultiplyTestCase.class
+//	PromptTestCase.class,	
+//	PrintAddAndMultiplyTestCase.class
+	PromptTestCase.class,
+	IncrementalInputPromptTestCase.class,
+	CustomCommandPromptTestCase.class,
+	CustomCommandIncrementalPromptTestCase.class,
+	PledgeTestCase.class
 	
 })
 	
