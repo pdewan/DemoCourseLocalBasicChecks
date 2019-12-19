@@ -10,6 +10,7 @@ import grader.basics.junit.NotAutomatableException;
 import grader.basics.junit.TestCaseResult;
 import grader.basics.project.NotGradableException;
 import grader.basics.project.Project;
+import grader.basics.project.source.ABasicTextManager;
 import grader.basics.testcase.PassFailJUnitTestCase;
 import gradingTools.shared.testcases.SubstringSequenceChecker;
 import gradingTools.shared.testcases.utils.LinesMatchKind;
@@ -34,6 +35,7 @@ public class SequentialSumTestCase extends PassFailJUnitTestCase {
 			LinesMatcher aLinesMatcher = aRunningProject.getLinesMatcher();
 			boolean aRetval = checker.check(aLinesMatcher, LinesMatchKind.ONE_TIME_LINE, Pattern.DOTALL);
 			String aSource = project.getSource();
+			Map<String, StringBuffer> aFileNameToContents = ABasicTextManager.extractFileContents(aSource);
 			String anExpectedLines = Arrays.toString(checker.getSubstrings());
 
 			if (!aRetval) {
