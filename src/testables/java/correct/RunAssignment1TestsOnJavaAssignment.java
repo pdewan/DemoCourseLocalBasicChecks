@@ -1,6 +1,6 @@
 package testables.java.correct;
 
-import gradingTools.compXYZ.assignment1.testcases.CartesianPointSuite;
+import gradingTools.comp999.assignment1.testcases.CartesianPointSuite;
 import gradingTools.interpreter.AnInterpretingGradableJUnitTest;
 import gradingTools.interpreter.AnInterpretingGradableJUnitTopLevelSuite;
 import util.trace.Tracer;
