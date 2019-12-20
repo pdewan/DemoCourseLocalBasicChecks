@@ -94,7 +94,7 @@ public class PromptTestCase extends PassFailJUnitTestCase {
 		}
 
 		catch (NotRunnableException e) {
-			throw new NotGradableException();
+			throw new NotGradableException(e.getMessage());
 		}
 	}
 }

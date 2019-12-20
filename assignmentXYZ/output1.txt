@@ -1,0 +1,9 @@
+You can type quit anytime to terminate
+Please enter the X coordinate.
+Please enter the Y coordinate.
+X: 50 Y:50  Radius:70.71067811865476 Angle:0.7853981633974483
+Please enter how much to move in the X direction
+Please enter how much to move in the Y direction
+X: 55 Y:45  Radius:71.06335201775947 Angle:0.6857295109062863
+Please enter the X coordinate.
+quitting
