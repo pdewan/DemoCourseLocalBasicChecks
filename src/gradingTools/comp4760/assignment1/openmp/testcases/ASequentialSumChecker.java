@@ -1,4 +1,4 @@
-package gradingTools.comp123.assignment1.openmp.testcases;
+package gradingTools.comp4760.assignment1.openmp.testcases;
 
 import gradingTools.shared.testcases.ASubstringSequenceChecker;
 
