@@ -11,14 +11,24 @@ import grader.basics.project.BasicProjectIntrospection;
 import gradingTools.comp110.assignment1.addmultiply.testcases.PrintAddAndMultiplyTestCase;
 import gradingTools.comp110.assignment1.addmultiply.testcases.PromptTestCase;
 import gradingTools.comp4760.assignment1.openmp.testcases.SequentialSumTestCase;
+import gradingTools.comp999.assignment2.testcases.DiningAtomicChopstick;
 import gradingTools.comp999.assignment2.testcases.DiningButlerCoordination;
 import gradingTools.comp999.assignment2.testcases.DiningNoDeadlock;
+import gradingTools.comp999.assignment2.testcases.DiningPollingPhilosopher;
+import gradingTools.comp999.assignment2.testcases.DiningExclusiveChopstick;
+import gradingTools.comp999.assignment2.testcases.DiningSequentialEating;
+import gradingTools.comp999.assignment2.testcases.DiningSharedChopstick;
 import trace.grader.basics.GraderBasicsTraceUtility;
 import util.trace.Tracer;
 
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
+	DiningSequentialEating.class,
+	DiningSharedChopstick.class,
+	DiningExclusiveChopstick.class,
+	DiningAtomicChopstick.class,
+	DiningPollingPhilosopher.class,
 	DiningNoDeadlock.class,
 	DiningButlerCoordination.class,	
 	

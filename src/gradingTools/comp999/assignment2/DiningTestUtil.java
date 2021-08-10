@@ -16,8 +16,8 @@ public class DiningTestUtil {
 
 	public static final String ALL_THREADS_FINISHED = "All Threads Finished";
 	protected static final long NUMBER_OF_BLOCKING_STEPS = 3; // think, left and right chopsticks
-	protected static final long SYNCHRONIZATION_MULTIPLIER = 5;
-    protected static final long METHOD_INVOKE_TIME_OUT = 100;
+	protected static final long SYNCHRONIZATION_MULTIPLIER = 10;
+    public static final long METHOD_INVOKE_TIME_OUT = 100;
 
 
 //    public static final long TIME_OUT = 200;
@@ -54,16 +54,19 @@ public class DiningTestUtil {
 			return e;
 		}
     }
-    public static Object setNewCourseTime(long aNumberPhilosopher) {
+    public static Object setNewCourseTime(long aNumberPhilosopher, long aTimeout) {
     	Class[] anArgTypes = {Long.TYPE};
     	Object[] anArgs = {aNumberPhilosopher};
     	try {
-			return BasicProjectExecution.timedInvokeClassMethod(UTIL_CLASS_NAME, SETTER_NEW_COURSE_TIME, anArgTypes, anArgs, METHOD_INVOKE_TIME_OUT);
+			return BasicProjectExecution.timedInvokeClassMethod(UTIL_CLASS_NAME, SETTER_NEW_COURSE_TIME, anArgTypes, anArgs, aTimeout);
 		} catch (Throwable e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 			return e;
 		}
+    }
+    public static Object setNewCourseTime(long aNumberPhilosopher) {
+    	return setNewCourseTime(aNumberPhilosopher, METHOD_INVOKE_TIME_OUT);
     }
     public static Object waitForPhilosophersToFinish(long aTimeOut) {
     	Class[] anArgTypes = {};
