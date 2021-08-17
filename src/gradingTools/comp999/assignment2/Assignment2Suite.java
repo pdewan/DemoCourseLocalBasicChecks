@@ -11,7 +11,7 @@ import grader.basics.project.BasicProjectIntrospection;
 import gradingTools.comp110.assignment1.addmultiply.testcases.PrintAddAndMultiplyTestCase;
 import gradingTools.comp110.assignment1.addmultiply.testcases.PromptTestCase;
 import gradingTools.comp4760.assignment1.openmp.testcases.SequentialSumTestCase;
-import gradingTools.comp999.assignment2.testcases.DiningAtomicChopstick;
+import gradingTools.comp999.assignment2.testcases.DiningLockedChopstick;
 import gradingTools.comp999.assignment2.testcases.DiningButlerCoordination;
 import gradingTools.comp999.assignment2.testcases.DiningNoDeadlock;
 import gradingTools.comp999.assignment2.testcases.DiningPollingPhilosopher;
@@ -27,7 +27,7 @@ import util.trace.Tracer;
 	DiningSequentialEating.class,
 	DiningSharedChopstick.class,
 	DiningExclusiveChopstick.class,
-	DiningAtomicChopstick.class,
+	DiningLockedChopstick.class,
 	DiningPollingPhilosopher.class,
 	DiningNoDeadlock.class,
 	DiningButlerCoordination.class,	
