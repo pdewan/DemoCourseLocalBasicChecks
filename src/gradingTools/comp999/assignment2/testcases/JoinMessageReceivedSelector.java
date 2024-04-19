@@ -1,9 +1,9 @@
 package gradingTools.comp999.assignment2.testcases;
 
-import gradingTools.shared.testcases.concurrency.propertyChanges.ConcurrentEventUtility;
-import gradingTools.shared.testcases.concurrency.propertyChanges.ConcurrentPropertyChange;
-import gradingTools.shared.testcases.concurrency.propertyChanges.ConcurrentPropertyChangeSupport;
-import gradingTools.shared.testcases.concurrency.propertyChanges.Selector;
+import grader.basics.concurrency.propertyChanges.ConcurrentEventUtility;
+import grader.basics.concurrency.propertyChanges.ConcurrentPropertyChange;
+import grader.basics.concurrency.propertyChanges.ConcurrentPropertyChangeSupport;
+import grader.basics.concurrency.propertyChanges.Selector;
 
 public class JoinMessageReceivedSelector implements Selector<ConcurrentPropertyChangeSupport> {
 	public static Object[] parameters = {

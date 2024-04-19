@@ -1,11 +1,11 @@
 package gradingTools.comp999.assignment2.testcases;
 
+import grader.basics.concurrency.propertyChanges.ConcurrentEventUtility;
 import grader.basics.junit.NotAutomatableException;
 import grader.basics.junit.TestCaseResult;
 import grader.basics.project.NotGradableException;
 import grader.basics.project.Project;
 import gradingTools.comp999.assignment2.DiningTestUtil;
-import gradingTools.shared.testcases.concurrency.propertyChanges.ConcurrentEventUtility;
 
 public class DiningSharedChopstick extends DiningSequentialEating {
 

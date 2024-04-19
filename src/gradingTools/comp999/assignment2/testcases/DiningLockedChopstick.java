@@ -1,6 +1,6 @@
 package gradingTools.comp999.assignment2.testcases;
 
-import gradingTools.shared.testcases.concurrency.propertyChanges.ConcurrentEventUtility;
+import grader.basics.concurrency.propertyChanges.ConcurrentEventUtility;
 
 public class DiningLockedChopstick extends DiningExclusiveChopstick {   
 

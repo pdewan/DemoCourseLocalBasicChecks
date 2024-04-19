@@ -2,16 +2,16 @@ package gradingTools.comp999.assignment2.testcases;
 
 import java.util.Arrays;
 
+import grader.basics.concurrency.propertyChanges.BasicConcurrentPropertyChangeSupport;
+import grader.basics.concurrency.propertyChanges.ConcurrentEventUtility;
+import grader.basics.concurrency.propertyChanges.ConcurrentPropertyChange;
+import grader.basics.concurrency.propertyChanges.ConcurrentPropertyChangeSupport;
 import grader.basics.junit.NotAutomatableException;
 import grader.basics.junit.TestCaseResult;
 import grader.basics.project.NotGradableException;
 import grader.basics.project.Project;
 import grader.basics.testcase.PassFailJUnitTestCase;
 import gradingTools.comp999.assignment2.DiningTestUtil;
-import gradingTools.shared.testcases.concurrency.propertyChanges.BasicConcurrentPropertyChangeSupport;
-import gradingTools.shared.testcases.concurrency.propertyChanges.ConcurrentEventUtility;
-import gradingTools.shared.testcases.concurrency.propertyChanges.ConcurrentPropertyChange;
-import gradingTools.shared.testcases.concurrency.propertyChanges.ConcurrentPropertyChangeSupport;
 
 public class DiningSequentialEating extends PassFailJUnitTestCase {
     
